@@ -25,7 +25,9 @@ public class BuggyPlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             jump = true;
-            moveInput = Input.GetAxis("Horizontal");
+
+        moveInput = Input.GetAxis("Horizontal");
+
         if (moveInput != 0)
             anim.SetBool("isMoving", true);
         else
